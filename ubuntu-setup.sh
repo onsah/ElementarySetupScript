@@ -1,13 +1,15 @@
 # 
 sudo apt update
 
+sudo apt upgrade
+
 # Firefox
 sudo apt install firefox
 
 # VScode
 wget -O ~/Downloads/vs-code.deb "https://go.microsoft.com/fwlink/?LinkID=760868"
 cd ~/Downloads
-dpkg -i vs-code.deb
+sudo dpkg -i vs-code.deb
 cd ~
 
 # Git
@@ -26,7 +28,7 @@ sudo apt install fonts-firacode
 # Flatpak
 sudo apt install flatpak
 
-# Flathub,
+# Flathub
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Spotify
@@ -58,5 +60,5 @@ if test -f $FILE; then
 else
     echo "$FILE doesn't exists" 
 
-# Torrent client
-flatpak install flathub de.haeckerfelix.Fragments
+# Nvidia
+sudo ubuntu-drivers autoinstall
